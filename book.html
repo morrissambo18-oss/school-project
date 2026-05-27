@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book a Session — CampusTutor VUT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="banner">
+        <a href="index.html"><img src="images/logo.svg" alt="CampusTutor VUT logo"></a>
+        <h1>CampusTutor VUT</h1>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tutors.html">Tutors</a></li>
+            <li><a href="book.html" class="active">Book a Session</a></li>
+            <li><a href="about.html">About &amp; Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h2>Book a tutoring session</h2>
+        <p>Complete the short form below. A tutor will reply to your e-mail address within one working day to confirm the booking.</p>
+
+        <form class="booking-form" action="thank-you.html" method="post">
+            <div class="field">
+                <label for="module">Module</label>
+                <select id="module" name="module" required>
+                    <option value="">— please select —</option>
+                    <option value="WEDE2A">WEDE2A — Web Development</option>
+                    <option value="PROG2A">PROG2A — Programming</option>
+                    <option value="DBAS2A">DBAS2A — Databases</option>
+                    <option value="NETW2A">NETW2A — Networking</option>
+                    <option value="AIWEX3A">AIWEX3A — Web Management</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="date">Preferred date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="field">
+                <label for="name">Your full name</label>
+                <input type="text" id="name" name="name" placeholder="e.g. Lerato Mokoena" required>
+            </div>
+
+            <div class="field">
+                <label for="email">E-mail address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="field">
+                <label for="message">Anything we should know?</label>
+                <textarea id="message" name="message" rows="4" placeholder="Topic, exam date, preferred mode (on campus / online)"></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary">Submit booking</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CampusTutor VUT — student project. |
+           <a href="mailto:campustutor.vut@gmail.com">campustutor.vut@gmail.com</a> |
+           <a href="https://www.vut.ac.za" target="_blank" rel="noopener">vut.ac.za</a></p>
+    </footer>
+</body>
+</html>
