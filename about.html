@@ -2,8 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About &amp; Contact — CampusTutor VUT</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Embedded CSS: page-specific styles for the About page -->
+    <style>
+        main h2 {
+            color: #1a3a5c;
+            border-bottom: 3px solid #f5a623;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        main h3 {
+            color: #1a3a5c;
+            margin-top: 1.75rem;
+        }
+
+        .team-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .team-list li {
+            padding: 0.6rem 0.75rem;
+            border-bottom: 1px solid #dde3ea;
+            font-size: 1.05rem;
+        }
+
+        .team-list li:last-child {
+            border-bottom: none;
+        }
+
+        .contact-box {
+            background-color: #f0f4f8;
+            border-left: 4px solid #f5a623;
+            padding: 1rem 1.25rem;
+            border-radius: 6px;
+            margin-top: 0.5rem;
+            line-height: 1.8;
+        }
+    </style>
 </head>
 <body>
     <header class="banner">
@@ -25,19 +64,22 @@
         <p>CampusTutor VUT is a student project built for the AIWEX3A Web Management module at the Vaal University of Technology. The site is designed and maintained by a small team of third-year IT students who experienced the same problem we are trying to solve: it is hard to find a senior peer who can explain a tricky module before an upcoming test.</p>
 
         <h3>The team</h3>
-        <ul>
+        <ul class="team-list">
             <li><strong>Morris</strong> — project lead, HTML and CSS author.</li>
             <li><strong>Buhle</strong> — content writer and tutor liaison.</li>
             <li><strong>Uvumile</strong> — graphics and accessibility checks.</li>
             <li><strong>Neo</strong> — project planner and coordinator.</li>
             <li><strong>Wandile</strong> — graphic designer and web developer.</li>
+            <li><strong>Sibongiseni</strong> — content writer and social media manager.</li>
         </ul>
 
         <h3>Contact</h3>
-        <p>E-mail: <a href="mailto:campustutor.vut@gmail.com">campustutor.vut@gmail.com</a><br>
-           Office hours: Mondays and Wednesdays, 14:00 — 16:00, IT Building, Room 2.14.</p>
+        <div class="contact-box">
+            <p>E-mail: <a href="mailto:campustutor.vut@gmail.com">campustutor.vut@gmail.com</a><br>
+               Office hours: Mondays and Wednesdays, 14:00 — 16:00, IT Building, Room 2.14.</p>
+        </div>
 
-        <p>For institutional information about the university, please visit the official site:
+        <p style="margin-top: 1.25rem;">For institutional information about the university, please visit the official site:
            <a href="https://www.vut.ac.za" target="_blank" rel="noopener">https://www.vut.ac.za</a>.</p>
     </main>
 
